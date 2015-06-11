@@ -1,4 +1,4 @@
-This is a direct Java port of [liblbfgs](http://www.chokkan.org/software/liblbfgs/).
+This is a direct Java port of [liblbfgs](http://www.chokkan.org/software/liblbfgs/), a library of Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS).
 
 ### Build
 <pre>
@@ -29,4 +29,6 @@ double[] x = minimizer.minimize(f); // x should be {5}
 double min = f.valueAt(x);          // min should be 1
 ```
 
-### MIT License
+### License
+
+lbfgs4j is released under the MIT License (see the LICENSE file for details).
