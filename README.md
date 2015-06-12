@@ -1,9 +1,13 @@
 This is a direct Java port of [liblbfgs](http://www.chokkan.org/software/liblbfgs/), a library of Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS).
 
-### Build
-<pre>
-mvn clean package
-</pre>
+### Maven dependency
+```xml
+<dependency>
+  <groupId>com.github.vinhkhuc</groupId>
+  <artifactId>lbfgs4j</artifactId>
+  <version>0.1</version>
+</dependency>
+```
 
 ### Usage example
 Find the minimum value of the function f(x) = (x-5)^2 + 1.
