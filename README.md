@@ -1,11 +1,14 @@
-This is a direct Java port of [liblbfgs](http://www.chokkan.org/software/liblbfgs/), a library of Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS).
+This is a direct Java port of [liblbfgs](http://www.chokkan.org/software/liblbfgs/), a library of <strong>Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS)</strong>.
 
 The L-BFGS optimization method is used to solve unconstrained minimization problem:
 <p>
-minimize f(x), where x = (x1, x2, ... xn), f(x) and its gradient g(x) are computable.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+minimize f(x), where x = (x1, x2, ... xn) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+f(x) and its gradient are computable.
 </p>
 
-This library also includes the implementation of the Orthant-Wise Limited-memory Quasi-Newton (OWL-QN) method which is used to minimize the function f(x) + C|x| where C is a positive constant number.
+This library also includes the implementation of the <strong>Orthant-Wise Limited-memory Quasi-Newton (OWL-QN) </strong> method which is used to minimize the function f(x) + C|x| where C is a positive number.
 
 ### Maven dependency
 ```xml
