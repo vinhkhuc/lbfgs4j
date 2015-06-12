@@ -8,7 +8,7 @@ minimize f(x), where x = (x1, x2, ... xn) <br>
 f(x) and its gradient are computable.
 </p>
 
-This library also includes the implementation of the <strong>Orthant-Wise Limited-memory Quasi-Newton (OWL-QN) </strong> method which is used to minimize the function f(x) + C|x| where C is a positive number.
+This library also includes the implementation of the <strong>Orthant-Wise Limited-memory Quasi-Newton (OWL-QN) </strong> method which is used to minimize the function f(x) + C|x|, where C is a positive number.
 
 ### Maven dependency
 ```xml
