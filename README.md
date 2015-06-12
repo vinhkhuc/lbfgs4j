@@ -45,7 +45,7 @@ double min = f.valueAt(x);          // min should be 1
 
 The OWL-QN method will be used when initializing the minimizer with, for example, ```new LbfgsMinimizer(1.0)```, here 1.0 is the coefficient for |x|.
 
-Other parameters such as memory size, maximum number of iterations, etc. can be set using ```LBFGS_Param```. 
+Other parameters such as memory size, maximum number of iterations, etc. can be set using the class ```LBFGS_Param```. 
 
 ### License
 
