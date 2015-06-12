@@ -29,7 +29,7 @@ Function f = new Function() {
 };
 
 LbfgsMinimizer minimizer = new LbfgsMinimizer();
-double[] x = minimizer.minimize(f); // x should be {5}
+double[] x = minimizer.minimize(f); // x should be [5]
 double min = f.valueAt(x);          // min should be 1
 ```
 
