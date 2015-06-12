@@ -1,5 +1,11 @@
 This is a direct Java port of [liblbfgs](http://www.chokkan.org/software/liblbfgs/), a library of Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS).
 
+The L-BFGS optimization method is used to solve unconstrained minimization problem:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minimize f(x), where x = (x_1, x_2, ... x_n)
+
+with the condition that f(x) and its gradient g(x) can be computed.
+
 ### Maven dependency
 ```xml
 <dependency>
