@@ -166,7 +166,7 @@ public class LbfgsConstant {
 	 */
 	public static class LBFGS_Param {
 
-		  /**
+		/**
 	     * The number of corrections to approximate the inverse Hessian matrix.
 	     *  The L-BFGS routine stores the computation results of previous \ref m
 	     *  iterations to approximate the inverse Hessian matrix of the current
@@ -174,7 +174,7 @@ public class LbfgsConstant {
 	     *  (corrections). The default value is \c 6. Values less than \c 3 are
 	     *  not recommended. Large values will result in excessive computing time.
 	     */
-	    int             m;
+	    public int             m;
 
 	    /**
 	     * Epsilon for convergence test.
@@ -184,7 +184,7 @@ public class LbfgsConstant {
 	     *  where ||.|| denotes the Euclidean (L2) norm. The default value is
 	     *  \c 1e-5.
 	     */
-	    double          epsilon;
+	    public double          epsilon;
 
 	    /**
 	     * Distance for delta-based convergence test.
@@ -193,7 +193,7 @@ public class LbfgsConstant {
 	     *  parameter is zero, the library does not perform the delta-based
 	     *  convergence test. The default value is \c 0.
 	     */
-	    int             past;
+	    public int             past;
 
 	    /**
 	     * Delta for convergence test.
@@ -205,7 +205,7 @@ public class LbfgsConstant {
 	     *  the objective value of the current iteration.
 	     *  The default value is \c 0.
 	     */
-	    double          delta;
+	    public double          delta;
 
 	    /**
 	     * The maximum number of iterations.
@@ -215,21 +215,21 @@ public class LbfgsConstant {
 	     *  optimization process until a convergence or error. The default value
 	     *  is \c 0.
 	     */
-	    int             max_iterations;
+	    public int             max_iterations;
 
 	    /**
 	     * The line search algorithm.
 	     *  This parameter specifies a line search algorithm to be used by the
 	     *  L-BFGS routine.
 	     */
-	    LineSearch     lineSearch;
+	    public LineSearch     lineSearch;
 
 	    /**
 	     * The maximum number of trials for the line search.
 	     *  This parameter controls the number of function and gradients evaluations
 	     *  per iteration for the line search routine. The default value is \c 20.
 	     */
-	    int             max_linesearch;
+	    public int             max_linesearch;
 
 	    /**
 	     * The minimum step of the line search routine.
@@ -238,7 +238,7 @@ public class LbfgsConstant {
 	     *  problem is extremely badly scaled (in which case the exponents should
 	     *  be increased).
 	     */
-	    double          min_step;
+	    public double          min_step;
 
 	    /**
 	     * The maximum step of the line search.
@@ -247,14 +247,14 @@ public class LbfgsConstant {
 	     *  problem is extremely badly scaled (in which case the exponents should
 	     *  be increased).
 	     */
-	    double          max_step;
+	    public double          max_step;
 
 	    /**
 	     * A parameter to control the accuracy of the line search routine.
 	     *  The default value is \c 1e-4. This parameter should be greater
 	     *  than zero and smaller than \c 0.5.
 	     */
-	    double          ftol;
+	    public double          ftol;
 
 	    /**
 	     * A coefficient for the Wolfe condition.
@@ -265,7 +265,7 @@ public class LbfgsConstant {
 	     *  The default value is \c 0.9. This parameter should be greater
 	     *  the \ref ftol parameter and smaller than \c 1.0.
 	     */
-	    double          wolfe;
+	    public double          wolfe;
 
 	    /**
 	     * A parameter to control the accuracy of the line search routine.
@@ -277,7 +277,7 @@ public class LbfgsConstant {
 	     *  greater than the \ref ftol parameter (\c 1e-4) and smaller than
 	     *  \c 1.0.
 	     */
-	    double          gtol;
+	    public double          gtol;
 
 	    /**
 	     * The machine precision for floating-point values.
@@ -286,7 +286,7 @@ public class LbfgsConstant {
 	     *  with the status code (::LBFGSERR_ROUNDING_ERROR) if the relative width
 	     *  of the interval of uncertainty is less than this parameter.
 	     */
-	    double          xtol;
+	    public double          xtol;
 
 	    /**
 	     * Coefficient for the L1 norm of variables.
@@ -301,7 +301,7 @@ public class LbfgsConstant {
 	     *  the function value F(x) and gradients G(x) as usual. The default value
 	     *  is zero.
 	     */
-	    double          orthantwise_c;
+	    public double          orthantwise_c;
 
 	    /**
 	     * Start index for computing L1 norm of the variables.
@@ -315,7 +315,7 @@ public class LbfgsConstant {
 	     *  variables, x_1, ..., x_{b-1} (e.g., a bias term of logistic
 	     *  regression) from being regularized. The default value is zero.
 	     */
-	    int             orthantwise_start;
+	    public int             orthantwise_start;
 
 	    /**
 	     * End index for computing L1 norm of the variables.
@@ -324,7 +324,7 @@ public class LbfgsConstant {
 	     *  specifies the index number at which the library stops computing the
 	     *  L1 norm of the variables x,
 	     */
-	    int             orthantwise_end;
+	    public int             orthantwise_end;
 
 	    /**
 	     * Constructor

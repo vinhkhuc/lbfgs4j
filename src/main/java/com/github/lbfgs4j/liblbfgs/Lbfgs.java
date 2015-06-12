@@ -48,7 +48,7 @@ public class Lbfgs {
 	}
 	
 	static LBFGS_Param _defparam = new LBFGS_Param(
-				  6, 1e-5, 0, 1e-5,
+				6, 1e-5, 0, 1e-5,
 			    0, LBFGS_LINESEARCH_DEFAULT, 40,
 			    1e-20, 1e20, 1e-4, 0.9, 0.9, 1.0e-16,
 			    0.0, 0, -1
@@ -154,7 +154,7 @@ public class Lbfgs {
 		    LBFGS_Param _param
 		    )
 	{
-		  ReturnValue ret;
+		ReturnValue ret;
 	    int i, j, k, end, bound;
 	    ReturnValue ls;
 	    MutableDouble step = new MutableDouble();
