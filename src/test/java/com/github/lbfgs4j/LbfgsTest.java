@@ -49,7 +49,7 @@ public class LbfgsTest {
   }
 
   @Test
-  public void simple() {
+  public void simple_lbfgs() {
 
     // f(x) = (x-5)^2 + 1
     Function f = new Function() {
@@ -66,14 +66,44 @@ public class LbfgsTest {
 
     boolean verbose = false;
     LbfgsMinimizer minimizer = new LbfgsMinimizer(verbose);
-    double[] x = minimizer.minimize(f); // x should be {5}
-    double min = f.valueAt(x);          // min should be 1
-
+    double[] x = minimizer.minimize(f);
+    double min = f.valueAt(x);
+    
     System.out.printf("The function achieves its minimum value = %.5f at: ", min);
     printOut(x);
 
     assertEquals(min, 1.0, 1e-3);
     assertArrayEquals(x, new double[] {5.0}, 1e-3);
+  }
+  
+  @Test
+  public void simple_owlqn() {
+
+    // f(x) = (x-5)^2 + 1
+    Function f = new Function() {
+      public int getDimension() {
+        return 1;
+      }
+      public double valueAt(double[] x) {
+        return Math.pow(x[0]-5, 2) + 1;
+      }
+      public double[] gradientAt(double[] x) {
+        return new double[] { 2*(x[0]-5) };
+      }
+    };
+
+    // Minimize the function f(x) + c|x|
+    boolean verbose = false;
+    double c = 1.0;
+    LbfgsMinimizer minimizer = new LbfgsMinimizer(c, verbose);
+    double[] x = minimizer.minimize(f);
+    double min = f.valueAt(x);
+
+    System.out.printf("The function achieves its minimum value = %.5f at: ", min);
+    printOut(x);
+
+    assertEquals(min, 26.0, 1e-3);
+    assertArrayEquals(x, new double[] {0.0}, 1e-3);
   }
   
   // Helper function

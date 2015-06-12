@@ -24,6 +24,14 @@ public class LbfgsMinimizer {
     this(Lbfgs.defaultParams(), true);
   }
 
+  /**
+   * Minimize the function using OWL-QN
+   * @param c
+   */
+  public LbfgsMinimizer(double c) {
+	  this(c, true);
+  }
+
   public LbfgsMinimizer(LBFGS_Param param) {
     this(param, true);
   }
@@ -32,6 +40,13 @@ public class LbfgsMinimizer {
     this(Lbfgs.defaultParams(), verbose);
   }
 
+  public LbfgsMinimizer(double c, boolean verbose) {
+	  this(Lbfgs.defaultParams(), verbose);
+	  
+	  if (c < 0) throw new IllegalArgumentException("c must be zero or positive");
+	  this.param.orthantwise_c = c;
+  }
+  
   public LbfgsMinimizer(LBFGS_Param param, boolean verbose) {
     this.param   = param;
     this.verbose = verbose;
