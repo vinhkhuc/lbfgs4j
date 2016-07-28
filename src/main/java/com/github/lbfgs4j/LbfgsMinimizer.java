@@ -53,8 +53,12 @@ public class LbfgsMinimizer {
   }
 
   public double[] minimize(Function f) {
+    return minimize(f, null);
+  }
+
+  public double[] minimize(Function f, double[] x0) {
     int dim = f.getDimension();
-    double[] x = new double[dim];
+    double[] x = x0 != null? x0 : new double[dim];
 
     MutableDouble fx  = new MutableDouble();
     Evaluate eval     = new Evaluate(f);
