@@ -15,7 +15,7 @@ This library also includes the implementation of the <strong>Orthant-Wise Limite
 <dependency>
   <groupId>com.github.vinhkhuc</groupId>
   <artifactId>lbfgs4j</artifactId>
-  <version>0.2</version>
+  <version>0.2.1</version>
 </dependency>
 ```
 

@@ -6,7 +6,7 @@
 
     <groupId>com.github.vinhkhuc</groupId>
     <artifactId>lbfgs4j</artifactId>
-	<version>0.2</version>
+	<version>0.2.1</version>
 	<name>A direct Java port of liblbfgs</name>
 	<description>
 		lbfgs4j is a Java version of liblbfgs, a library of Limited-memory 
