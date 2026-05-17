@@ -56,4 +56,3 @@ lbfgs4j is released under the MIT License (see the LICENSE file for details).
 This library is used in several projects:
 1. Moment-Based Quantile Sketches for Efficient High Cardinality Aggregation Queries. Edward Gan, Jialin Ding, Kai Sheng Tai, Vatsal Sharan, Peter Bailis. VLDB 2018. ([paper](https://arxiv.org/abs/1803.01969)).
 2. CrowdStrike Falcon ([Open Source Attribution for CrowdStrike Falcon, February 2026](https://assets-public.falcon.crowdstrike.com/cms-assets/falcon/open-source-licenses.html)).
-3. Humio, Log Management at Scale ([acknowledgement](https://docs.humio.com/third-party-licenses/)).
